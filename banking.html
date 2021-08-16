@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <!-- tailwind freamework cdn here -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- header section start from here -->
+    <header>
+        <h2 class=" text-5xl text-center mt-5">Let's Do Some<br><span class="font-semibold text-blue-400">Account Of Money!</span></h2>
+    </header>
+    <!-- header section end from here -->
+
+    <!-- main section start from here -->
+    <main class="w-4/5 mx-auto my-4">
+        <!--  display balance start form here  -->
+        <section class="mt-14">
+            <div class="grid lg:grid-cols-3 gap-4 text-white text-center">
+                <div class="bg-purple-500 p-10 rounded">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h2 class="text-4xl">$<span id="deposit-total">000</span></h2>
+                </div>
+                <div class="bg-red-400 p-10 rounded">
+                    <h3 class="text-2xl">Withdraw</h3>
+                    <h2 class="text-4xl">$<span id="withdraw-total">000</span></h2>
+                </div>
+                <div class="bg-green-400 p-10 rounded">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h2 class="text-4xl">$<span id="balance-total">1250</span></h2>
+                </div>
+            </div>
+        </section>
+        <!--  display balance end form here  -->
+
+        <!-- Deposit and Withdraw start form here -->
+        <section class="mt-8">
+            <div class="grid lg:grid-cols-2 gap-4">
+                <div class="bg-red-100 p-8 rounded">
+                    <h2 class="text-3xl text-blue-400 font-semibold mb-4">Please Deposit</h2>
+                    <div>
+                        <input id="deposit-amount" class="border border-gray-400 rounded block mb-6 px-2 py-2 w-4/5" type="text" placeholder="The amount you want to Deposit !">
+                        <div class="flex">
+                            <button id="deposit-btn" class="bg-blue-400 px-4 py-2 rounded font-medium text-white ">Deposit</button>
+                            <p id="error" class="text-red-500 mx-4"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-100 p-8 rounded">
+                    <h2 class="text-3xl text-blue-400 font-semibold mb-4">Please Withdraw</h2>
+                    <div>
+                        <input id="withdraw-amount" class="border border-gray-400 rounded block mb-6 px-2 py-2 w-4/5" type="text" placeholder="The amount you want to Withdraw !">
+                      <div class="flex">
+                        <button id="withdraw-btn" class="bg-blue-400 px-4 py-2 rounded font-medium text-white ">Withdraw</button>
+                        <p id="error-2" class="text-red-500 mx-4"></p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and Withdraw end form here -->
+
+    </main>
+    <!-- main section end from here -->
+    
+    <!-- js here -->
+    <script src="js/banking.js"></script>
+</body>
+</html>

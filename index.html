@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useless Bank</title>
+    <!-- tailwind freamework cdn here -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- header section start from here -->
+    <header>
+        <h2 class=" text-5xl text-center mt-5">Hey There! Welcome To <br><span class="font-semibold text-blue-400">Useless Bank!</span></h2>
+    </header>
+    <!-- header section end from here -->
+
+    <!-- main section start from here -->
+    <main>
+        <!-- login form start here -->
+        <section class="bg-green-100 lg:w-1/2 w-3/4 mx-auto p-8 mt-14 rounded">
+            <h2 class="text-3xl text-blue-400 font-semibold mb-7 n text-center">Please Login .</h2>
+            <div class="flex justify-center flex-col">
+                <input id="user-email" class="border border-gray-400 rounded block mb-6 px-2 py-2" type="email" placeholder="Your Email">
+                <input id="user-password" class="border border-gray-400 rounded block mb-6 px-2 py-2" type="password" placeholder="Your Password">
+                <button id="login-btn" class="bg-blue-400 px-4 py-2 rounded font-medium text-white ">SUBMIT</button>
+                <p id="alert-message" class="text-red-400 mt-4"></p>
+            </div>
+        </section>
+        <!-- login form end here -->
+    </main>
+    <!-- main section end from here -->
+
+    <!-- bank js script here -->
+    <script src="js/login.js"></script>
+    
+</body>
+</html>
