@@ -32,6 +32,14 @@ function updateBalance(inputedBalance, isAdd){
     }
 }
 
+// get the current balance here
+function currentBalance(){
+    let mainBalance = document.getElementById('balance-total');
+    let mainBalanceText = mainBalance.innerText;
+    let mainbalanceNumber = parseFloat(mainBalanceText);
+    return mainbalanceNumber;
+}
+
 // here is the deposit button 
 document.getElementById('deposit-btn').addEventListener('click', function(){
 
@@ -54,7 +62,8 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
 
     // calling the input value function here
     const withdrawInput = getTheInput('withdraw-amount');
-    if(withdrawInput > 0){
+    const getCurrentBalance = currentBalance();
+    if(withdrawInput > 0 && withdrawInput <= getCurrentBalance){
     // set the total amount in the main box of withdraw
     getTheStaticAmount(withdrawInput, 'withdraw-total');
     // update the balance here
