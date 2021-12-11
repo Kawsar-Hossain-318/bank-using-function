@@ -9,7 +9,7 @@ document.getElementById('login-btn').addEventListener('click', function(){
     const userPassword = userPasswordField.value;
 
     // user email and password checking here
-    if(userEmail == 'kawsarhossain@gmail.com' && userPassword == 'secret'){
+    if(userEmail == 'admin@admin.com' && userPassword == 'admin'){
         window.location.href="banking.html";
     }
     else{
